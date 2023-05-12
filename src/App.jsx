@@ -1,5 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
+import { GlobalStyles } from './styles/GlobalStyles';
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<BrowserRouter>
+			<GlobalStyles />
+			<Router />
+		</BrowserRouter>
+	);
 };
 
 export default App;
